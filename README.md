@@ -1,14 +1,5 @@
 # artix-luks-base-install
 
-A fully self-contained Artix Linux base installation script that installs the
-base system with an encrypted disk on /root /home and /swap using cryptsetup.
-The script is fully automated with no interaction from start to finish.
-Parameters are given as command line arguments.
-
-The installer is only configured to work with EFI systems and installs the runit
-init system by default. By default it allocates 12G for /swap, 50G for /root and
-everything else for /home. This should be sufficient for most configurations.
-
 Features:
 - EFI only.
 - Encrypted /root /home and /swap using LVM on LUKS encryption technique.
