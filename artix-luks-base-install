@@ -87,10 +87,10 @@ sed -s 's/# %wheel ALL=(ALL) ALL/%wheel ALL=(ALL) ALL \
 Defaults rootpw,pwfeedback/g' -i /mnt/etc/sudoers
 
 # Set hosts and link NetworkManager.
-echo "4rt1x" > /mnt/etc/hostname
+echo "artix" > /mnt/etc/hostname
 echo '127.0.0.1 localhost
 ::1 localhost
-127.0.1.1 4rt1x.localdomain 4rt1x' >> /mnt/etc/hosts
+127.0.1.1 artix.localdomain artix' >> /mnt/etc/hosts
 artix-chroot /mnt sh -c 'ln -s /etc/runit/sv/NetworkManager /etc/runit/runsvdir/default'
 
 # Set locale and default timezone.
