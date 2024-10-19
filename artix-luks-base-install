@@ -3,7 +3,7 @@
 
 # Proper usage checks.
 [ -z "$1" ] && echo "Usage: 
-artix-luks-base-install dev/sdX encrypt3dpassw0rd" && exit
+artix-luks-base-install /dev/sdX encrypt3dpassw0rd" && exit
 [ -z "$(ls /sys/firmware/efi/efivars)" ] && echo "EFI only installation; Please boot with EFI." && exit
 [ $(id -u) != 0 ] && echo "Root privileges required." && exit
 [ -z "$(connmanctl state | grep -e online -e ready)" ] && \
